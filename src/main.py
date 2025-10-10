@@ -181,7 +181,7 @@ if __name__ == "__main__":
     filename = f"update-{args.update}-lr-{args.lr}-wd-{args.wd}-seed-{args.seed}.pkl"
     os.makedirs("results", exist_ok=True)
 
-    print(f"Saving results to {os.path.join("results", filename)}")
+    print(f"Saving results to {os.path.join('results', filename)}")
     with open(os.path.join("results", filename), "wb") as f:
         pickle.dump(results, f)
-    print(f"Results saved to {os.path.join("results", filename)}")
+    print(f"Results saved to {os.path.join('results', filename)}")
